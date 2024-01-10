@@ -10,7 +10,7 @@ variable "instance-name" {
 
 variable "instance-ami-id" {
     type = list
-    default = [ami-03265a0778a880afb]
+    default = ["ami-03265a0778a880afb"]
 }
 
 variable "sg-name" {
@@ -34,6 +34,6 @@ variable "sg-to-port"{
 }
 
 variable "sg_cidr_blocks"{
-    type = number
-    default = "0.0.0.0/0"
+    type = list
+    default = ["0.0.0.0/0"]
 }
